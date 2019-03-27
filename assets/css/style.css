@@ -1,0 +1,37 @@
+header{
+    background-size: 100% 100%;
+    padding:120px 0px;
+    background-image:  URL("../images/country-train.jpg");
+    
+    height: 400px;
+}
+.container1 {
+    
+    margin:auto;
+    border: 1px solid gray;
+    margin-top: 20px;
+    padding:20px;
+}
+#currentschedule{
+    background-color:darkgray;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 25px;
+}
+.title {
+	font-size: 80px;
+	margin-top: 0px;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+.header-text{
+    font-size: 25px;
+    font-weight: bold;
+    color: aliceblue;
+}
+#addtrain{
+    background-color: darkgray;
+    font-weight: bold;
+    font-size: 25px;
+    color: aliceblue
+}

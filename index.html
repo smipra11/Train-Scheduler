@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--bootstrap import-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--moment.js-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <!--custom css-->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <title>Train Scheduler</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h1 class="title text-center">Worldwide Railways</h1>
+        <p class="header-text text-center">Scheduler for the world's most lexury trains</p>
+    </header>
+
+    <div class="container1">
+       
+        <div class="row">
+            <div class="col-md-6">
+                    <h1 id="currentschedule"> Current Time Schedule</h1>
+                    <br>
+                    <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency(min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away </th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <h1 id="addtrain">Add Train</h1>
+                <hr>
+                <form id="formfield">
+                    <div class="form-group">
+                        <label>Train Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+                    <div class="form-group">
+                        <label>First Train Time(HH:mm-millitary time</label>
+                        <input type="text" class="form-control" id="traintime">
+                    </div>
+                    <div class="form-group">
+                        <label>Frequency(min)</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+                </form>
+                <button type="button" class="btn btn-dark" id="submit-btn">Submit</button>
+                <br>
+            </div>
+            <br><br>
+
+
+        </div>
+    </div>
+    <script src="assets/javascript/logic.js"></script>
+
+
+</body>
+
+</html>
